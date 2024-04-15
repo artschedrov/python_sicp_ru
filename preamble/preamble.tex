@@ -1,0 +1,61 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+%\usepackage[T1]{fontenc}
+\usepackage[T2A]{fontenc}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{blindtext}
+\usepackage{xcolor}
+\graphicspath{{img/}}
+\hypersetup{
+  colorlinks,
+  linkcolor={black},
+  citecolor={black},
+  urlcolor={black}
+}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{cmap}
+\renewcommand{\rmdefault}{ftm}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\usepackage{extsizes}     % Возможность сделать 14-й шрифт
+\usepackage{geometry}     % Простой способ задавать поля
+\usepackage{setspace}     % Интерлиньяж
+\usepackage{enumitem}     % Настройка окружений itemize и enumerate
+\setlist{leftmargin=25pt}
+
+\geometry{top=20mm}    % Поля сверху страницы
+\geometry{bottom=20mm} % Поля снизу страницы
+\geometry{left=30mm}   % Поля слева страницы
+\geometry{right=10mm}  % Поля справа страницы
+
+\setlength\parindent{15pt}        % Устанавливает длину красной строки 15pt
+\linespread{1.3}
+%Hyphenation rules
+%--------------------------------------
+\usepackage{hyphenat}
+\hyphenation{ма-те-ма-ти-ка вос-ста-нав-ли-вать}
+%--------------------------------------
+\usepackage[english,russian]{babel}
